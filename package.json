@@ -1,0 +1,18 @@
+{
+    "name": "assignment-02-audits-js",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/exam-01-practice/assignment-02-audits-js",
+    "author": "Charles Opute Odili <chaluwa@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+      "audit-ch-1": "jest --json --rootDir=ch-1 --outputFile=ch-1/ch-1.json --noStackTrace",
+      "audit-ch-2": "jest --json --rootDir=ch-2 --outputFile=ch-2/ch-2.json --noStackTrace",
+      "audit-ch-3": "jest --json --rootDir=ch-3 --outputFile=ch-3/ch-3.json --noStackTrace"
+    },
+    "dependencies": {
+      "axios": "^0.27.2",
+      "jest": "^28.1.1"
+    }
+  }
+  
