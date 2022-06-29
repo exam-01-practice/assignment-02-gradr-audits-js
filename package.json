@@ -6,9 +6,9 @@
     "author": "Charles Opute Odili <chaluwa@gmail.com>",
     "license": "MIT",
     "scripts": {
-      "audit-ch-1": "jest --json --rootDir=ch-1 --outputFile=ch-1/ch-1.json --noStackTrace",
-      "audit-ch-2": "jest --json --rootDir=ch-2 --outputFile=ch-2/ch-2.json --noStackTrace",
-      "audit-ch-3": "jest --json --rootDir=ch-3 --outputFile=ch-3/ch-3.json --noStackTrace"
+      "audit-ch-1": "jest --json --rootDir=ch-1 --outputFile=ch-1/ch-1.json --noStackTrace --colors",
+      "audit-ch-2": "jest --json --rootDir=ch-2 --outputFile=ch-2/ch-2.json --noStackTrace --colors",
+      "audit-ch-3": "jest --json --rootDir=ch-3 --outputFile=ch-3/ch-3.json --noStackTrace --colors"
     },
     "dependencies": {
       "axios": "^0.27.2",
