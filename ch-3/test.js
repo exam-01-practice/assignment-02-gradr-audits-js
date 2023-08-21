@@ -5,10 +5,10 @@ const { celsiusToFahrenheit } = assignment;
 const maybe = celsiusToFahrenheit === undefined ? test.skip : test;
 
 maybe('Challenge - 3 : celsiusToFahrenheit can convert array of numbers', async () => {
-    const URL = 'https://randomapi.com/api/a250d3ad56839c442cfc61ba4f649007';
+    const URL = 'https://randomapi.com/api/997f1c72e6b3685a1ca82c478dbfac78';
     const { data: { results } } = await axios.get(URL);
     const [randomTestData] = results;
-    const {numbers, converted} = randomTestData;
+    const { value, correctFunction } = randomTestData;
 
-    expect(celsiusToFahrenheit(numbers)).toEqual(converted);
+    expect(celsiusToFahrenheit(value)).toEqual(correctFunction);
 });

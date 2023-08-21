@@ -1,14 +1,14 @@
 const assignment = require('../../src/assignment.js');
 const axios = require('axios');
 
-const { sumOfNumbers } = assignment;
-const maybe = sumOfNumbers === undefined ? test.skip : test;
+const { sumOfNumbersTo } = assignment;
+const maybe = sumOfNumbersTo === undefined ? test.skip : test;
 
 maybe('Challenge - 1 : sumNumbers can sum array of numbers', async () => {
-    const URL = 'https://randomapi.com/api/f1efd3d4dd91ce0f744e7e1cf7b3c055';
+    const URL = 'https://randomapi.com/api/tcp8cz29?key=1YGT-X0VZ-V2PC-TUK8';
     const { data: { results } } = await axios.get(URL);
     const [randomTestData] = results;
-    const {numbers, numbersSum} = randomTestData;
+    const { value, correctFunction } = randomTestData;
 
-    expect(sumOfNumbers(numbers)).toBe(numbersSum);
+    expect(sumOfNumbersTo(value)).toBe(correctFunction);
 });
